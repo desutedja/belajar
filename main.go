@@ -17,7 +17,8 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-//DbConn untuk koneksi, nantinya mungkin akan dipisah filenya
+// DbConn untuk koneksi, nantinya mungkin akan dipisah filenya
+// test commit
 func DbConn() (db *sql.DB) {
 	dbDriver := "mysql"
 	dbUser := "root"
