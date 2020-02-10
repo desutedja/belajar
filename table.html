@@ -1,0 +1,124 @@
+{{ define "table" }}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+        .blue{
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: #1893a4;
+            color: #fff;
+            padding: 17px 20px 16px;
+            -webkit-border-radius: 3px 3px 0 0;
+            -moz-border-radius: 3px 3px 0 0;
+            border-radius: 3px 3px 0 0;
+        }
+        .gray{
+            background-color: #ededdc;
+            padding:0px 40px;
+        }
+        .lh > td{
+            line-height: 3;
+        }
+        .lh > td:nth-child(1){
+            border-bottom:1px solid #DFDFD0;
+        }
+        .lh > td:nth-child(2){
+            border-bottom:1px solid #DFDFD0;
+        }
+        tr.lh.last > td{
+            border-bottom:none;
+        }
+
+        .wsb > td{
+            line-height: 1.5;
+        }
+
+        .fg{
+            color:#858585;
+            width: 12%;
+        }
+
+        </style>
+    </head>
+    <body>
+        <table style="width: 90%;font-family: 'Montserrat', sans-serif;font-weight: 400;color: #191F26;font-size: 14px;text-transform: uppercase;">
+            <tr>
+                <td colspan="2" style="width: 66.66%;"><h3>Harap selesaikan pembayaran anda sebelum :</h3></td>
+                <td>&nbsp;</td>
+                <td colspan="2" class="blue">Nomor Pesanan</td>
+            </tr>
+            <tr class="wsb">
+                <td colspan="2" rowspan="3" class="gray"><i class="fa fa-clock-o fa-2x" aria-hidden="true"></i> <span>10/FEB/2020 22:00 WIB</span></td>
+                <td>&nbsp;</td>
+                <td colspan="2">Ringkasan Pesanan</td>
+            </tr>
+            <tr class="wsb">
+                <td>&nbsp;</td>
+                <td class="fg">Jenis</td>
+                <td>Luar Kota Menginap</td>
+            </tr>
+            <tr class="wsb">
+                <td>&nbsp;</td>            
+                <td class="fg">Berangkat</td>
+                <td>10 FEB 2020 21:00:26</td>
+            </tr>
+            <tr class="wsb">
+                <td colspan="2">&nbsp;</td>
+                <td>&nbsp;</td>                 
+                <td class="fg">Kembali</td>
+                <td>11 FEB 2020 21:00:26</td>
+            </tr>
+            <tr class="wsb">
+                <td colspan="2">&nbsp;</td>
+                <td>&nbsp;</td>                
+                <td class="fg">Dari</td>
+                <td>DEPOK</td>
+            </tr>            
+            <tr class="wsb">
+                <td colspan="2" style="font-weight: bold;font-size: 19px;">Harap Transfer Ke</td>
+                <td>&nbsp;</td>                
+                <td class="fg">Tujuan</td>
+                <td>JOGJAKARTA</td>
+            </tr>
+            <tr class="wsb">
+                <td colspan="2">&nbsp;</td>
+                <td>&nbsp;</td>               
+                <td class="fg">Nama Bus</td>
+                <td>BUS TEST 1</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="blue">Bank Transfer</td>
+                <td>&nbsp;</td>                
+                <td colspan="2" class="blue">Total Rp. 1.000.000,-</td>
+            </tr>
+            <tr class="lh">
+                <td>BANK BCA</td>
+                <td><img src="https://drive.google.com/uc?export=view&id=15giL5dRyjC9JbQIHcdNUlGmB3h0Tpgq0" style="width: 25%;vertical-align: middle;"/></td>
+                <td colspan="3">&nbsp;</td>
+            </tr>
+            <tr class="lh">
+                <td>Nomor Rekening</td>
+                <td>123.456.7890</td>
+                <td colspan="3">&nbsp;</td>
+            </tr>
+            <tr class="lh">
+                <td>Nama Rekening</td>
+                <td>Chelvins</td>
+                <td colspan="3">&nbsp;</td>
+            </tr>
+            <tr class="lh last">
+                <td>Jumlah Trf</td>
+                <td>Rp. 1.000.000,-</td>
+                <td colspan="3">&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="blue">Harap Dibayarkan sesuai jumlah</td>
+                <td colspan="3">&nbsp;</td>
+            </tr>
+        </table>
+    </body>
+</html>
+{{ end }}
